@@ -1,2 +1,2 @@
 # fclub
-Website for the restorant
+Website for the restaurant

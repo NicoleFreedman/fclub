@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Fclub Lounge Cafe</title>
+   
+
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://lipis.github.io/bootstrap-social/bootstrap-social.css" rel="stylesheet">
+<link href="../css/main.css" rel="stylesheet">
+<link rel="stylesheet" href="../css/fbalbums.css">
+<link rel="stylesheet" href="../css/fancybox.css">
+
+</head>
+<body>
+
+<div class="cont">
+  <nav class="navbar navbar-default navbar-fixed-top" >
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-menu">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+    <div class="brand-centered">
+      <div class="navbar-brand"><img src="../img/logo_beige_new.png">
+      </div>
+      </div>
+    <div id="top-menu" class="navbar-collapse collapse">
+    <ul class="nav navbar-nav navbar-left">
+         <li class="textmenu"><a  href="../index.html">Главная</a></li>
+        <li class="textmenu"><a  href="../html/kitchen-menu.html">Кухня</a></li>
+       <li class="textmenu"><a href="../html/bar-menu.html">Бар</a></li>
+      </ul>
+       <ul class="nav navbar-nav navbar-right">
+        <li class="textmenu"><a href="../index.html#afisha">Афиша</a></li>
+        <li class="textmenu"><a href="#">Галерея</a></li>
+        <li class="textmenu"><a href="../index.html#contacts">Контакты</a></li>
+      </ul></div>
+    </div>
+</nav>
+  </div>
+
+<div class="gallery"></div>
+<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="../js/fancybox.js"></script>
+
+<script src="../js/fbalbum.js"></script>
+<script>
+
+$(document).ready(function(){
+
+	// Setting fancybox
+	$(".fbfppopup").fancybox({
+		openEffect : 'fade',
+		closeEffect : 'fade'
+	});
+
+	// Setting fbfpalbums
+	$(".gallery").fbfpalbums(
+		fp = "FClubkh", // your username or id facebook fans page
+		token = "193673707489176|55a9bc60f1b35074263ea95e45218fc3" // your facebook accessToken
+	);
+
+});
+
+</script>
+
+<footer class="footer">
+  <div class="rights">NicoleFreedman © 2017. All rights reserved.
+  </div>
+</footer>
+</body></html>
